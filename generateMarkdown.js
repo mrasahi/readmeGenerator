@@ -7,22 +7,38 @@ function generateMarkdown(data) {
     - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
-    - [Contributing](#contributing)
+    - [Contributors](#contributors)
     - [Tests](#tests)
     - [Questions](#questions)
-
+    
     # Description
 
+    ${data.description}
+    
     # Installation
+    
+    ${data.install}
 
     # Usage
 
+    ${data.usage}
+    
     # License
 
+    ${data.license}
+    
     # Contributors
 
+    ${data.contributors}
     
-  
+    # Tests
+
+    ${data.tests}
+    
+    # Questions
+
+    ${data.questions}
+
   `;
   }
   
