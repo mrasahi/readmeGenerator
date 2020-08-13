@@ -35,6 +35,10 @@ Makoto, and other people from the study group.
 
 Tests go here, I don't know what stuff tests have but they will go here.
 
+<img src="./assets/img/preview1.jpg" width = "100%">
+
+<img src="./assets//img/preview2.jpg" width = "100%">
+
 # Questions
 
 If you have any questions, contact me at: '...'
