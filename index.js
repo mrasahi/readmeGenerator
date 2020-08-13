@@ -10,11 +10,11 @@ const questions = [
         name: 'description',
         message: 'Please enter a Description tab'
     },
-    {
-        type: 'input',
-        name: 'toc',
-        message: 'Please enter a Table of Contents tab'
-    },
+    // {
+    //     type: 'input',
+    //     name: 'toc',
+    //     message: 'Please enter a Table of Contents tab'
+    // },
     {
         type: 'input',
         name: 'install',
@@ -29,7 +29,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Please select a License',
-        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+        choices: ["None", "MIT", "APACHE 2.0", "GPL 3.0", "BSD 3"]
     },
     {
         type: 'input',
@@ -48,13 +48,33 @@ const questions = [
     }
 ];
 
+// Import thingy
+const inquirer = require('inquirer')
+const fs = require('fs')
+const generateMarkdown = require('./generateMarkdown.js')
+
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, function (error) {console.log(error)})
 }
 
 // function to initialize program
 function init() {
-
+    inquirer
+        // Question prompts
+        .prompt(
+            questions
+        )
+        // Results/answers from prompts
+        .then(answers => {
+            console.log(generateMarkdown(answers))
+            
+            writeToFile('README.md', generateMarkdown(answers))
+        })
+        // When things go south
+        .catch(error => {
+            console.log(error)
+        })
 }
 
 // function call to initialize program
