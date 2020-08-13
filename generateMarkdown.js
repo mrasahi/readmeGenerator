@@ -2,44 +2,42 @@
 function generateMarkdown(data) {
     return `# ${data.title}
 
-    ## Table of Contents 
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributors](#contributors)
-    - [Tests](#tests)
-    - [Questions](#questions)
+## Table of Contents 
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributors](#contributors)
+- [Tests](#tests)
+- [Questions](#questions)
     
-    # Description
+# Description
 
-    ${data.description}
+${data.description}
     
-    # Installation
+# Installation
     
-    ${data.install}
+${data.install}
 
-    # Usage
+# Usage
 
-    ${data.usage}
+${data.usage}
     
-    # License
+# License
 
-    ${data.license}
+${data.license}
     
-    # Contributors
+# Contributors
 
-    ${data.contributors}
+${data.contributor}
     
-    # Tests
+# Tests
 
-    ${data.tests}
+${data.tests}
     
-    # Questions
+# Questions
 
-    ${data.questions}
-
-  `;
+${data.questions}`;
   }
   
   module.exports = generateMarkdown;
@@ -50,6 +48,6 @@ function generateMarkdown(data) {
 // - [Installation](#installation)
 // - [Usage](#usage)
 // - [License](#license)
-// - [Contributing](#contributing)
+// - [Contributor](#contributor)
 // - [Tests](#tests)
 // - [Questions](#questions)

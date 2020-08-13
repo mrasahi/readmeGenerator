@@ -10,11 +10,6 @@ const questions = [
         name: 'description',
         message: 'Please enter a Description tab'
     },
-    // {
-    //     type: 'input',
-    //     name: 'toc',
-    //     message: 'Please enter a Table of Contents tab'
-    // },
     {
         type: 'input',
         name: 'install',
@@ -55,7 +50,7 @@ const generateMarkdown = require('./generateMarkdown.js')
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, function (error) {console.log(error)})
+    fs.writeFile(fileName, data, function (error) {if (error) {console.log(error)}})
 }
 
 // function to initialize program
@@ -66,9 +61,9 @@ function init() {
             questions
         )
         // Results/answers from prompts
-        .then(answers => {
+        .then(function (answers) {
             console.log(generateMarkdown(answers))
-            
+            console.log(answers)
             writeToFile('README.md', generateMarkdown(answers))
         })
         // When things go south
