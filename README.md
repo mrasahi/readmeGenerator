@@ -1,36 +1,38 @@
-# title
+# README Generator
 
-    ## Table of Contents 
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributors](#contributors)
-    - [Tests](#tests)
-    - [Questions](#questions)
+## Table of Contents 
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributors](#contributors)
+- [Tests](#tests)
+- [Questions](#questions)
     
-    # Description
+# Description
 
-    something
+This app creates README files through prompts in the console.
     
-    # Installation
+# Installation
     
-    install inquirer
+To use this app, first install the npm inquirer by typing `npm i inquirer` in the terminal before running.
 
-    # Usage
+# Usage
 
-    stuff happens
+Creates README files easily for lazy people.
     
-    # License
+# License
 
-    None
+None
     
-    # Contributors
+# Contributors
 
-    contr
+Makoto, and other people from the study group.
     
-    # Tests
+# Tests
 
-    tst
+Tests go here. I don't know what stuff t ests have but they will go here.
     
-    # Questions
+# Questions
+
+If you have any questions, contact me at: '...' or just shout loud enough.
